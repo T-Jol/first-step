@@ -79,14 +79,40 @@ Accédez à l'application via : `http://127.0.0.1:8000/`
 ## 📝 Structure du Projet
 
 ```
-app/
-├── Http/
-│   ├── Controllers/Api/  # Contrôleurs API
-│   ├── Requests/         # Validation
-│   ├── Resources/        # Formatage JSON
-│   └── Responses/        # Réponses API
-├── Models/               # Modèles Eloquent
-└── Exceptions/          # Gestion des erreurs
+first-step/
+├── app/
+│   ├── Exceptions/           # Gestion des erreurs
+│   ├── Http/
+│   │   ├── Controllers/Api/  # Contrôleurs API
+│   │   ├── Requests/         # Validation (FormRequest)
+│   │   ├── Resources/        # Formatage JSON (API Resources)
+│   │   └── Responses/        # Réponses API standardisées
+│   └── Models/               # Modèles Eloquent
+├── bootstrap/                # Fichiers de démarrage Laravel
+├── config/                   # Fichiers de configuration
+├── database/
+│   ├── factories/            # Factories pour tests/seeding
+│   ├── migrations/           # Migrations de la base de données
+│   └── seeders/              # Seeders pour peupler la base
+├── public/                   # Fichiers accessibles publiquement (index.php, assets)
+├── resources/
+│   ├── js/
+│   │   ├── components/       # Composants Vue.js
+│   │   ├── pages/            # Pages Vue.js
+│   │   └── ...               # Autres fichiers JS
+│   ├── views/                # Vues Blade (si besoin)
+│   └── css/                  # Fichiers CSS/Tailwind
+├── routes/
+│   ├── api.php               # Routes API
+│   └── web.php               # Routes web
+├── storage/                  # Fichiers générés (logs, cache…)
+├── tests/                    # Tests unitaires et fonctionnels
+├── .env.example              # Exemple de configuration d'environnement
+├── .gitignore                # Fichiers/dossiers à ignorer par Git
+├── composer.json             # Dépendances PHP/Laravel
+├── package.json              # Dépendances JS/Vue.js
+├── README.md                 # Documentation du projet
+└── vite.config.js            # Configuration Vite (frontend)
 ```
 
 ## 🎓 Contexte
