@@ -39,15 +39,22 @@ npm run dev       # Terminal 2
 
 ## 📚 API
 
-### Base URL
-```
-http://127.0.0.1:8000/api/v1
-```
+### URLs d'accès
+- Application principale : `http://127.0.0.1:8000/`
+- API : `http://127.0.0.1:8000/api/v1/`
 
-### Endpoints Principaux
-- `GET /stories` - Liste des histoires
-- `GET /chapters/{id}` - Détails d'un chapitre
-- `GET /choices` - Liste des choix
+### Endpoints Disponibles
+- `GET /api/v1/stories` - Liste des histoires
+- `GET /api/v1/chapters/{id}` - Détails d'un chapitre
+
+### Exemples d'utilisation
+```bash
+# Accéder à l'application
+http://127.0.0.1:8000/
+
+# Accéder à un chapitre spécifique via l'API
+http://127.0.0.1:8000/api/v1/chapters/1
+```
 
 ### Gestion des Erreurs
 
@@ -67,7 +74,7 @@ http://127.0.0.1:8000/api/v1
 
 ## 🎮 Jouer
 
-Accédez à l'application via : `http://127.0.0.1:8000`
+Accédez à l'application via : `http://127.0.0.1:8000/`
 
 ## 📝 Structure du Projet
 
