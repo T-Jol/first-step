@@ -31,7 +31,7 @@ php artisan key:generate
 touch database/database.sqlite
 
 # Base de données
-php artisan migrate:refresh --seed
+php artisan migrate:fresh --seed  # Cette commande recrée toutes les tables et insère les données de test
 
 # Lancement
 php artisan serve  # Terminal 1
@@ -93,12 +93,12 @@ first-step/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/Api/  # Contrôleurs API
-│   │   ├── Requests/         # Validation
-│   │   └── Resources/        # Formatage JSON
-│   └── Models/               # Modèles Eloquent
-├── database/
-│   ├── migrations/           # Structure de la base de données
-│   └── seeders/              # Données initiales
+│   │   │   ├── Requests/         # Validation
+│   │   │   └── Resources/        # Formatage JSON
+│   │   └── Models/               # Modèles Eloquent
+│   └── database/
+│       ├── migrations/           # Structure de la base de données
+│       └── seeders/              # Données initiales
 ├── resources/
 │   ├── js/
 │   │   ├── components/       # Composants Vue.js
